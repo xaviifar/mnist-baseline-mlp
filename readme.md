@@ -1,69 +1,40 @@
-# Guia de programación python basica:
+# MNIST Baseline MLP
 
+Este proyecto contiene implementaciones y exploraciones de modelos Multi-Layer Perceptron (MLP) aplicados al famoso conjunto de datos MNIST (clasificación de dígitos escritos a mano). El objetivo principal del repositorio es comparar distintas bibliotecas de Machine Learning y Deep Learning en la misma tarea, así como documentar los resultados obtenidos.
 
-1. Abrir Visual Studio Code (Icono Azul) o Antigravity
+## 📂 Estructura del Proyecto
 
-2. Abrir carpeta donde esta todo 
-    2.1 Tres rayas (Arriba izquierda )
-    2.2 Seleccionar file
-    2.3 Open folder
-    2.4 Seleccionar que carpeta abrir.
+El repositorio está organizado de la siguiente manera:
 
-3. Como crear un archivo python:
+### 📓 Notebooks Principales (Raíz)
+- **`main.ipynb`**: Notebook principal del proyecto. Implementa el modelo MLP utilizando TensorFlow/Keras, manejando el flujo de entrenamiento principal y la evaluación del modelo.
+- **`pytorch.ipynb`**: Implementación de la red neuronal MLP utilizando el framework **PyTorch**.
+- **`sklearn.ipynb`**: Implementación de un MLP clasificador utilizando la librería **Scikit-learn** (`MLPClassifier`), ideal para establecer un modelo base de comparación.
 
-1. Ir a arriba a la izquierda
-2. New file 
-3. Nombrar archivo nombre.py (Terminar siempre con .py)
+### 📁 Directorios
 
-4. Guardar cambios
+- **`notebooks/`**:
+  - `exploration.ipynb`: Notebook dedicado al Análisis Exploratorio de Datos (EDA) del conjunto MNIST, visualización de imágenes y análisis estadístico de las clases.
 
-Para guardar los cambios hay dos opciones.
-1. Pulsar Ctl+s (Tecla Control + S)
-2. 3 rayas de arriba -> File -> Save/Save all
+- **`docs/`**: Contiene los informes detallados y reportes finales del proyecto:
+  - `Informe_MLP_MNIST_Pytorch.pdf`: Documento explicativo centrado en la implementación en PyTorch.
+  - `Informe_MLP_MNIST.pdf`: Reporte general de los resultados y la metodología del proyecto.
 
+- **`results/`**: Almacena las visualizaciones y gráficas generadas durante el entrenamiento y la evaluación de los modelos:
+  - `confusion_matrix_tensorflow.png`: Matriz de confusión generada a partir del modelo entrenado en TensorFlow.
+  - `linear_graphic_accuracy.png`: Gráfico lineal que muestra la evolución de la precisión (accuracy) durante las épocas de entrenamiento.
 
-## Como ejecutar un archivo
+### 📄 Otros Archivos
+- **`requirements.txt`**: Archivo reservado para listar las dependencias de Python necesarias para replicar el entorno del proyecto.
 
-Hay dos maneras de hacerlo.
+- **`.venv/`**: Entorno virtual de Python (no se debe incluir en control de versiones).
+- **`.gitignore`**: Archivos y directorios ignorados por Git.
 
-Puedes ir arriba a la derecha que hay un boton de play. 
+## 🚀 Cómo empezar
 
-Puedes abrir la terminal y ejecutar el comando
+1. Clona el repositorio.
+2. Crea un entorno virtual e instala las dependencias (por ejemplo, desde `requirements.txt` cuando se definan, o instala manualmente `tensorflow`, `torch`, `scikit-learn`, `jupyter`, `matplotlib`).
+3. Abre los Jupyter Notebooks ubicados en la raíz y en el directorio `notebooks/` para visualizar los flujos de trabajo de PyTorch, TensorFlow y Scikit-Learn.
 
-"python nombre.py" DARLE A ENTER
-
-# Como instalar cosas
-
-
-Para abrir la terminal hay dos maneras
-1. Con Ctl + J 
-2. Pulsando el icono de arriba a la derecha con una barra abajo
-
-Para instalar paquetes hay que abrir la terminal
-
-Para instalar paquets escribir comando
-
-pip install "nombre paquete"
-
-Como usar la inteligencia artificial dentro del programa.
-
-Dentro del antigravity se puede usar la inteligencia artificial para que te haga las cosas.
-
-Para abrirlo hay que pulsar este icono, esta situado arriba a la derecha.
-
-Desde ahi podras escribir a la IA y que te vaya haciendo cosas de codigo. Hay que ir mirando porque a veces pide confirmacion
-
-
-# MUY RECOMENDADO
-
-Siempre que se empieze una practica nueva
-
-Ejecutar 2 comandos
-
-python -m venv venv
-
-venv/Scripts/activate
-
-Debe aparecer en la terminal un nombre de color verde. 
-
-
+## 📝 Autor
+Proyecto desarrollado por **Xavi Far**.
